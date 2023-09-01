@@ -6,4 +6,7 @@ catboost
 xgboost
 transformers
 dill
+flask
+pickle
+
 #-e .

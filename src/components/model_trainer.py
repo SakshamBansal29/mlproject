@@ -17,7 +17,7 @@ from src.utils import save_object, evaluate_model
 @dataclass
 
 class ModelTrainerConfig:
-    trained_model_file_path = os.path.join('artifact', 'model.pkl')
+    trained_model_file_path = os.path.join('artifact', 'model.obj')
 
 class ModelTrainer:
     def __init__(self):
@@ -37,7 +37,7 @@ class ModelTrainer:
                 "Random Forest": RandomForestRegressor(),
                 "Decision Tree": DecisionTreeRegressor(),
                 "Linear Regression": LinearRegression(),
-                #"K-Nearest Neighbours": KNeighborsRegressor(),
+                #"K-Nearest Neighbours":KNeighborsRegressor(),
                 #"XGB Regression": XGBRegressor(),
                 "CatBoosting Regressor": CatBoostRegressor(verbose=False),
                 "AdaBoost Regressor": AdaBoostRegressor()
